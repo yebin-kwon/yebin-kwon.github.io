@@ -1,0 +1,350 @@
+@@include('includes/headstuff.html')
+<title>@@include('projects/@@id/title.txt')</title>
+<meta property="og:title" content="@@include('projects/@@id/title.txt')">
+<meta name="description" content="@@include('projects/@@id/description.txt')">
+<meta property="og:description" content="@@include('projects/@@id/description.txt')">
+<meta property="og:image" content="overview.jpg">
+<script src="/flowbite.js"></script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+
+        z-index: 1;
+        /* Sit on top */
+        position: fixed;
+        padding: 0;
+        margin: 0;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content (Image) */
+    .modal-content {
+        margin: auto;
+        border-radius: 0.75em;
+        display: block;
+        max-width: 94%;
+        max-height: 94%;
+    }
+
+
+    /* Add Animation - Zoom in the Modal */
+    .modal-content,
+    #caption {
+        animation-name: zoom;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<!-- The Modal -->
+<div id="myModal" class="modal !pt-2">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img style="pointer-events: none;" oncontextmenu="return false;" id="projectimgmodal" class="modal-content" src="overview.jpg">
+</div>
+
+<body>
+    <div class="abhibodypre"><!-- DO NOT GET RID OF THIS DIV!! IT'S FOR SCROLLING-->
+        <div class="abhibody ">
+            <nav>
+                <a class="nav group" href="/?page=projects"><span class="arrow">←</span>&nbsp;Projects
+                </a>
+            </nav>
+            <main>
+                <div class="fade-in mb-4">
+                    <div class="md:flex flex-row gap-3 items-center w-full">
+                        <div class="flex-1 min-w-0 max-w-fit items-center">
+                            <h1 class="heading mb-2 w-fit" id="projectTitle">@@include('projects/@@id/title.txt')</h1>
+                            <p class="mb-4 date w-fit" id="projectTitleDesc">@@include('projects/@@id/subtitle.txt')</p>
+                        </div>
+
+
+                        <div id="projectdiv"
+                            class="relative flex-1 flex max-w-[30em] max-h-[12.5em] md:ml-auto min-h-0 min-w-0 hover:brightness-75 hover:scale-[1.02] transition-all">
+
+                            <img oncontextmenu="return false;" id="projectimg" src="overview.jpg"
+                                class="object-contain object-left md:object-right cursor-pointer">
+                            <div class="absolute bottom-2 max-md:left-2 md:right-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <script type="text/javascript">
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var btnd = document.getElementById("projectdiv")
+                        var modalImg = document.getElementById("img01");
+                        var span = document.getElementsByClassName("close")[0];
+                        var captionText = document.getElementById("caption");
+                        document.addEventListener('keydown', (event) => {
+                            if (event.key === 'Escape') {
+                                span.click();
+                            }
+                        });
+                        btnd.onclick = function () {
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        }
+
+                        // Get the <span> element that closes the modal
+
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    </script>
+
+
+                    <div class="mt-2 pb-5">
+
+
+
+                        <div id="accordion-collapse" data-accordion="open" data-active-classes="accordion-select"
+                            data-inactive-classes="text-opacity-100">
+
+
+
+
+
+
+
+
+
+
+                            <div id="accordion-collapse-heading-1" class="abhihover group w-full" aria-expanded="true"
+                                aria-controls="accordion-collapse-body-1"
+                                data-accordion-target="#accordion-collapse-body-1">
+                                <div class="abhipad flex-1 flex items-center text-left">
+
+
+
+                                    <h2 class="w-full">
+                                        Project Summary </h2>
+
+
+                                    <svg data-accordion-icon class="accordion-arrow" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 5 5 1 1 5">
+                                            <!-- d="M 9 1 L 5 5 L 1 1" -->
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+
+                            <div id="accordion-collapse-body-1" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-1">
+                                <div class="page-accordion p-5 bg-opacity-[0.7] dark:bg-opacity-[0.4]">
+
+                                    <p id="projectSummary" class="text-base leading-normal">@@include('projects/@@id/projectSummary.txt')</p>
+
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div id="accordion-collapse-heading-2" class="abhihover group w-full" aria-expanded="true"
+                                aria-controls="accordion-collapse-body-2"
+                                data-accordion-target="#accordion-collapse-body-2">
+                                <div class=" abhipad flex-1 flex items-center text-left">
+
+
+                                    <h2 class="w-full">
+                                    Links / Files</h2>
+
+
+                                    <svg data-accordion-icon class="accordion-arrow" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 5 5 1 1 5">
+                                            <!-- d="M 9 1 L 5 5 L 1 1" -->
+                                        </path>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div id="accordion-collapse-body-2" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-2">
+                                <div class="page-accordion">
+                                    <div class="mt-2 text-base" id="links">@@include('projects/@@id/links.txt')</div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+                            <div id="accordion-collapse-heading-3" class="abhihover group w-full" aria-expanded="true"
+                                aria-controls="accordion-collapse-body-3"
+                                data-accordion-target="#accordion-collapse-body-3">
+                                <div class=" abhipad flex-1 flex items-center text-left">
+
+
+                                    <h2 class="w-full">
+                                        Awards</h2>
+
+
+                                    <svg data-accordion-icon class="accordion-arrow" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 5 5 1 1 5">
+                                            <!-- d="M 9 1 L 5 5 L 1 1" -->
+                                        </path>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div id="accordion-collapse-body-3" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-3">
+
+
+                                <div class="page-accordion">
+
+
+                                    <div id="awards" class="text-base">@@include('projects/@@id/awards.txt')</div>
+
+
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <div id="accordion-collapse-heading-4" class="abhihover group w-full" aria-expanded="true"
+                                aria-controls="accordion-collapse-body-4"
+                                data-accordion-target="#accordion-collapse-body-4">
+                                <div class=" abhipad flex-1 flex items-center text-left">
+
+
+                                    <h2 class="w-full">
+                                        Acknowledgments</h2>
+
+
+                                    <svg data-accordion-icon class="accordion-arrow" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 5 5 1 1 5">
+                                            <!-- d="M 9 1 L 5 5 L 1 1" -->
+                                        </path>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div id="accordion-collapse-body-4" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-4">
+
+
+                                <div class="page-accordion">
+
+
+                                    <div id="acknowledgements" class="!mb-0">@@include('projects/@@id/acknowledgements.txt')</div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </main>
+        </div>
+    </div>
+
+</body>
+<script>
+    const sections = ['projectSummary', 'links', 'awards', 'acknowledgements'];
+    sections.forEach((section, index) => {
+        if (document.getElementById(section).innerHTML.trim() === '') {
+            document.getElementById(`accordion-collapse-heading-${index + 1}`).style.display = 'none';
+            document.getElementById(`accordion-collapse-body-${index + 1}`).style.display = 'none';
+        }
+    });
+</script>
+
+</html>

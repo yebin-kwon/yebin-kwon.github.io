@@ -1,0 +1,173 @@
+<div class="fade-in">
+    <h1
+        class="md:!text-5xl p-1 text-transparent mb-0 bg-clip-text dark:bg-gradient-to-r dark:from-yellow-500 dark:to-red-600 bg-gradient-to-r from-purple-600 to-red-600">
+        Yebin Kwon</h1>
+
+    <div class="mb-4 flex homelinkgap">
+
+        <div id="emailhomelinkdiv" class="homelinkdiv hover:text-yellow-500">
+            <button onclick="toggleMessage(this)" class="homelink">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-max h-max">
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z">
+                    </path>
+                    <path
+                        d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z">
+                    </path>
+                </svg>
+
+            </button>
+            <a id="message" href="mailto:contact@abhijeetghosh.com" target="_blank" rel="noopener noreferrer"
+                class="opacity-0 max-[35rem]:text-[0.69em] align-middle max-[25rem]:leading-5 text-[.85em]"
+                style="display: none;">&nbsp;<span class="link">contact@abhijeetghosh.com</span></a>
+
+        </div>
+
+        <script>
+            function toggleMessage(btn) {
+                const isMobile = window.matchMedia('(max-width: 37.5rem)').matches;
+
+                if (isMobile) {
+                    window.location.href = 'mailto:contact@abhijeetghosh.com';
+                } else {
+                    const msg = btn.parentElement.querySelector('#message');
+                    let timeoutId;
+
+                    if (msg.style.display === 'none') {
+                        msg.style.transition = 'opacity 0.2s ease';
+                        msg.style.display = 'inline';
+                        setTimeout(() => {
+                            msg.style.opacity = '1';
+                        }, 50);
+
+
+
+                        // Add hover listeners
+                        const container = btn.parentElement.parentElement;
+
+                        document.getElementById('emailhomelinkdiv').addEventListener('mouseleave', () => {
+                            timeoutId = setTimeout(() => {
+                                closeMessage(msg);
+                            }, 500);
+                        });
+
+                        document.getElementById('emailhomelinkdiv').addEventListener('mouseenter', () => {
+                            if (timeoutId) {
+                                clearTimeout(timeoutId);
+                            }
+                        });
+
+
+                    }
+                }
+            }
+            function closeMessage(msg) {
+                if (msg.style.display !== 'none') {
+                    msg.style.opacity = '0';
+                    setTimeout(() => {
+                        msg.style.display = 'none';
+                    }, 100);
+                }
+            }
+
+
+        </script>
+
+        <div class="homelinkdiv"><a href="https://github.com/anonymousaga" target="_blank" rel="noopener noreferrer"
+                class="homelink"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="scale-[0.90] w-max h-max" viewBox="0 0 24 24">
+                    <path d=" M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207
+            11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729
+            1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304
+            3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381
+            1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399
+            3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242
+            2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823
+            1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386
+            0-6.627-5.373-12-12-12z"></path>
+                </svg></a></div>
+
+        <div class="homelinkdiv hover:text-[#F301B9]"><a href="https://www.instagram.com/abhig1947/" target="_blank"
+                rel="noopener noreferrer" class="homelink">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-max h-max" viewBox="4 4 24 24"
+                    version="1.1">
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z" />
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z" />
+
+                </svg>
+
+            </a></div>
+
+        <div class="homelinkdiv hover:text-[#FF0000]"><a href="https://youtube.com/@abhijeet_ghosh" target="_blank"
+                rel="noopener noreferrer" class="homelink">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-max h-max" viewBox="0 0 24 24"
+                    version="1.1">
+
+                    <path
+                        d="M 19.015625 3.507812 L 4.984375 3.507812 C 2.230469 3.507812 0 5.738281 0 8.492188 L 0 15.507812 C 0 18.261719 2.230469 20.492188 4.984375 20.492188 L 19.015625 20.492188 C 21.769531 20.492188 24 18.261719 24 15.507812 L 24 8.492188 C 24 5.738281 21.769531 3.507812 19.015625 3.507812 Z M 15.644531 12.339844 L 9.082031 15.472656 C 8.90625 15.554688 8.703125 15.425781 8.703125 15.234375 L 8.703125 8.777344 C 8.703125 8.582031 8.914062 8.453125 9.085938 8.542969 L 15.648438 11.867188 C 15.84375 11.96875 15.84375 12.246094 15.644531 12.339844 Z M 15.644531 12.339844 ">
+                    </path>
+
+                </svg>
+
+            </a></div>
+        <div class="homelinkdiv hover:text-[#0A66C2]"><a href="https://www.linkedin.com/in/anonymousaga/"
+                target="_blank" rel="noopener noreferrer" class="homelink">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"
+                    class="scale-[0.90] w-max h-max">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                    </path>
+                </svg>
+
+            </a></div>
+
+        <div class="homelinkdiv"><a class="group homelink" href="https://orcid.org/0009-0009-1853-1487" title="ORCID iD"
+                target="_blank" rel="noopener noreferer">
+
+                <svg class="scale-[0.90] h-max w-max" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+fill="currentColor"  viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+          
+           <path class="st0 fill-current group-hover:text-[#A6CE39] transition" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/>
+           <g>
+               <path class="st1 fill-current text-white dark:text-black" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/>
+               <path class="st1 fill-current text-white dark:text-black " d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5
+                   c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/>
+               <path class="st1 fill-current text-white dark:text-black" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1
+                   C84.2,46.7,88.7,51.3,88.7,56.8z"/>
+           </g>
+           </svg>
+            </a></div>
+    </div>
+
+
+
+
+    <p class="font-normal"> I'm a <b>12th grade</b> STEM student in Atlanta, Georgia, committed to the Johns Hopkins
+        Class of 2030. I am going into
+        <b>medicine</b> and <b>biomedical research</b>. In my free time, you can see me researching medicine, solving
+        competitive math problems, and tinkering with electronics.
+    </p>
+
+    <hr class="mt-2">
+
+
+
+
+
+    <button class="abhihover group hover:bg-purple-700 hover:text-white  hover:border-purple-700 hover:scale-[1.04]"> <a
+            href="https://tutoring.abhijeetghosh.com" target="_blank" title="External Link" rel="noopener noreferrer"
+            class="abhipad">
+            <span class="inline-flex items-center">
+                <h4>Request Tutoring &nbsp; </h4><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="currentColor" class="w-7  h-7">
+                    <path
+                        d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z">
+                </svg>
+            </span></a></button>
+    <p class="mt-3">
+        <b>I tutor for free</b> via my 501(c)(3) nonprofit. 200+ hours of experience.
+    </p>
+
+
+</div>

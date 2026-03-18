@@ -1,0 +1,38 @@
+{
+  "name": "my_website",
+  "version": "1.0.0",
+  "description": "My personal website <br> Domain bought on May 6, 2023<br> Website developed on June 20, 2023<br><br> You can modify the code for your own website without contacting me.<br> This website's domain is https://abhijeetghosh.com",
+  "main": "tailwindcss-config.js",
+  "scripts": {
+    "watch": "grunt watch",
+    "build": "grunt"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anonymousaga/anonymousaga.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anonymousaga/anonymousaga.github.io/issues"
+  },
+  "homepage": "https://github.com/anonymousaga/anonymousaga.github.io#readme",
+  "dependencies": {
+    "flowbite": "^2.5.1",
+    "jquery": "^3.7.1",
+    "tailwindcss": "^3.4.9"
+  },
+  "devDependencies": {
+    "@lodder/grunt-postcss": "^3.1.1",
+    "autoprefixer": "^10.4.20",
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-include-replace": "^5.0.0",
+    "grunt-newer": "^1.3.0",
+    "grunt-template": "^1.0.0",
+    "grunt-text-replace": "^0.4.0",
+    "jit-grunt": "^0.10.0"
+  }
+}
