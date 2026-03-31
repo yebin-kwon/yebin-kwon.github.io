@@ -1907,12 +1907,6 @@ hr {
     border-radius: 0.08em
 }
 
-@font-face {
-    font-family: 'Pancake';
-    src: url('fonts/pancake-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 h1 {
     display: flex;
@@ -2313,17 +2307,9 @@ ul{
   .hover\:bg-opacity-100:hover{
     --tw-bg-opacity: 1;
   }
-  .hover\:text-\[\#0A66C2\]:hover{
-    --tw-text-opacity: 1;
-    color: rgb(10 102 194 / var(--tw-text-opacity));
-  }
   .hover\:text-\[\#F301B9\]:hover{
     --tw-text-opacity: 1;
     color: rgb(243 1 185 / var(--tw-text-opacity));
-  }
-  .hover\:text-\[\#FF0000\]:hover{
-    --tw-text-opacity: 1;
-    color: rgb(255 0 0 / var(--tw-text-opacity));
   }
   .hover\:text-blue-600:hover{
     --tw-text-opacity: 1;

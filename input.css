@@ -149,12 +149,6 @@ hr {
     border-radius: 0.08em
 }
 
-@font-face {
-    font-family: 'Pancake';
-    src: url('fonts/pancake-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 h1 {
     display: flex;
