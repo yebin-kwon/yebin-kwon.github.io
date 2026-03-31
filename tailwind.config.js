@@ -32,6 +32,7 @@ module.exports = {
     fontFamily: { 
       "arrow": ['Murecho'],
       'sans': ['Inter'],
+      "pancake": ['Pancake'],
       },
 
     extend: {

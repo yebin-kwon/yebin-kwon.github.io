@@ -1064,6 +1064,9 @@ video {
   -o-object-position: right;
      object-position: right;
 }
+.p-0{
+  padding: 0px;
+}
 .p-1{
   padding: 0.25rem;
 }
@@ -1157,6 +1160,9 @@ video {
 .align-middle{
   vertical-align: middle;
 }
+.\!font-pancake{
+  font-family: Pancake !important;
+}
 .font-arrow{
   font-family: Murecho;
 }
@@ -1165,6 +1171,10 @@ video {
 }
 .\!text-5xl{
   font-size: 3rem !important;
+  line-height: 1 !important;
+}
+.\!text-9xl{
+  font-size: 8rem !important;
   line-height: 1 !important;
 }
 .\!text-base{
@@ -1222,6 +1232,15 @@ video {
 .italic{
   font-style: italic;
 }
+.\!leading-3{
+  line-height: .75rem !important;
+}
+.\!leading-5{
+  line-height: 1.25rem !important;
+}
+.\!leading-none{
+  line-height: 1 !important;
+}
 .leading-5{
   line-height: 1.25rem;
 }
@@ -1230,6 +1249,9 @@ video {
 }
 .leading-9{
   line-height: 2.25rem;
+}
+.leading-none{
+  line-height: 1;
 }
 .leading-normal{
   line-height: 1.5;
@@ -1885,6 +1907,12 @@ hr {
     border-radius: 0.08em
 }
 
+@font-face {
+    font-family: 'Pancake';
+    src: url('fonts/pancake-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 h1 {
     display: flex;
@@ -2443,8 +2471,8 @@ ul{
     -o-object-position: right;
        object-position: right;
   }
-  .md\:\!text-5xl{
-    font-size: 3rem !important;
+  .md\:\!text-9xl{
+    font-size: 8rem !important;
     line-height: 1 !important;
   }
 }
