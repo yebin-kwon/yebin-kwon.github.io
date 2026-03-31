@@ -1,1 +1,0 @@
-An NTP-syncing, Wi-Fi clock that you can make yourself with a 3D printer and soldering iron.

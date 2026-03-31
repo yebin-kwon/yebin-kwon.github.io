@@ -33,6 +33,7 @@ module.exports = {
       "arrow": ['Murecho'],
       'sans': ['Inter'],
       "pancake": ['Pancake'],
+      "jellybean": ['Jellybean'],
       },
 
     extend: {
